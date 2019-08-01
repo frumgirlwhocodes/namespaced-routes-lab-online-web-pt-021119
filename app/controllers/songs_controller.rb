@@ -20,7 +20,7 @@ class SongsController < ApplicationController
       end
     end
   end
-  end
+  
 
   def show
     if params[:artist_id]
