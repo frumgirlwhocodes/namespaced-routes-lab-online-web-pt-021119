@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-
+@preference=Prefrence.last 
   end
 
   def show
