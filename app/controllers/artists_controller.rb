@@ -1,8 +1,10 @@
 class ArtistsController < ApplicationController
   def index
 @preference=Prefrence.last 
+if @prefrence 
 if @prefrence.artist_sort_order= "ASC"
-  Artist.all.sort_by { |
+  Artist.all.sort_by { |artist| artist.name }
+else 
   end
 
   def show
